@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Giovanny</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #fff;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "Open Sans", sans-serif;
+        padding-right: 1rem;
+      }
+
+      .form {
+        margin-top: 30px;
+        width: 100%;
+        max-width: 35rem;
+        font-size: 1.125rem;
+      }
+
+      .form label,
+      .form input,
+      .form textarea,
+      .form button,
+      .form select {
+        display: block;
+        width: 100%;
+      }
+
+      .form label {
+        color: #1E1E1E;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+      }
+
+      .form input,
+      .form select,
+      .form textarea {
+        font: inherit;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        transition: border-color, box-shadow 0.2s;
+      }
+
+      .form textarea {
+        min-height: 13rem;
+        resize: vertical;
+      }
+
+      .form input:hover,
+      .form input:focus,
+      .form textarea:hover,
+      .form textarea:focus,
+      .form select:hover,
+      .form select:focus {
+        outline: none;
+        border-color: #6aa74e;
+        box-shadow: 0 0 0 3px #6aa74ed5;
+      }
+
+      .form button {
+        display: block;
+        padding: 1rem;
+        background: #6aa74e;
+        color: #fff;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      .form button:hover,
+      .form button:focus {
+        outline: none;
+        background: #427c28d5;
+      }
+
+      span {
+        font-weight: 600;
+        color: #B90E1E;
+      }
+    </style>
+  </head>
+  <body>
+      <form action="https://formsubmit.co/giovannyfloyd@gmail.com" method="POST" class="form">
+        <label for="Nome">Nome <span>*</span></label>
+        <input type="text" name="Nome" id="Nome" required />
+  
+        <label for="Celular">Celular <span>*</span></label>
+        <input type="text" name="Celular" id="Celular" required />
+  
+        <label for="E-mail">E-mail <span>*</span></label>
+        <input type="email" name="Email" id="Email" required />
+  
+        <label for="Mensagem">Mensagem <span>*</span></label>
+        <textarea name="Mensagem" id="Mensagem" required></textarea>
+
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table">
+
+        <input type="hidden" name="_next" value="obrigado.html" />
+  
+        <button type="submit">ENVIAR</button>
+      </form>
+    </form>
+  </body>
+</html>
